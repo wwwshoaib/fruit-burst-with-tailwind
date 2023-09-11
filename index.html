@@ -1,17 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/fruit6.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Fruit-Burst</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/fruit6.png" type="image/x-icon">
+  <!-- tailwind -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="tailwind.config.js">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <!-- font awesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Fruit-Burst</title>
 </head>
+<style>
+  .font-lato {
+    font-family: 'Lato', sans-serif;
+  }
+</style>
 
 
 <body>
+  <header>
+    <nav>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Item 1</a></li>
+              <li>
+                <a>Parent</a>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </li>
+              <li><a>Item 3</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Item 1</a></li>
+            <li tabindex="0">
+              <details>
+                <summary>Parent</summary>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a>Item 3</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn">Button</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- main section -->
+  <main>
 
+  </main>
+  <!-- footer section -->
+  <footer class="w-[100%] h-[526px] bg-[#121212] flex flex-col text-white justify-center items-center gap-8 ">
+    
+    <!-- logo and title -->
+    <div class="flex flex-row gap-5  ">
+      <img src="images/logo.png" alt="">
+      <h1 class="text-4xl">Fruit Burst</h1>
+    </div>
+
+    <!-- bottom menubar -->
+    <div class="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-6 text-lg">
+      <a href="">Home</a>
+      <a href="">About Us</a>
+      <a href="">Shop</a>
+      <a href="">All Fruit</a>
+      <a href="">Support</a>
+      <a href="">My Account</a>
+    </div>
+
+    <!-- social media -->
+    <div class="grid grid-cols-6 md:grid-cols-6 lg:grid-cols-6 text-lg gap-6">
+      <a href=""> <i class="fa-brands fa-twitter"></i></a>
+      <a href=""> <i class="fa-brands fa-facebook"></i></a>
+      <a href=""> <i class="fa-brands fa-square-youtube"></i></a>
+      <a href=""> <i class="fa-brands fa-linkedin"></i></a>
+      <a href=""> <i class="fa-brands fa-instagram"></i></a>
+      <a href=""><i class="fa-brands fa-apple"></i></a>
+    </div>
+
+  </footer>
 </body>
-
 </html>
